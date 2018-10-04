@@ -6,26 +6,34 @@
     <title>Yhteystiedot</title>
 </head>
 <body>
-<h1>Tositerveys</h1>
+<h class="logoteksti">Tositerveys</h>
 <img id="etusivu_logo" src="" alt="">
-<ul>
-    <li><a href="#home">Koti</a></li>
-    <div class="dropdown">
-        <button class="dropbtn">Tuotteet
-            <i class="fa fa-caret-down"></i>
-        </button>
+<ul class="navigaatiolista">
+    <li><a class="active" href="index.html">Koti</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Palvelut</a>
         <div class="dropdown-content">
-            <a href="#">Tuotteet</a>
-            <a  href="#">Hoidot</a>
+            <a href="tuotesivu.html">Tuotteet</a>
+            <a href="hoitosivu.html">Hoidot</a>
         </div>
-    </div>
-    <li><a href="#about">Tietoa meistä</a></li>
-    <li><a class="active" href="#contact">Ota yhteyttä</a></li>
+    </li>
+    <li><a href="about.html">Tietoa meistä</a></li>
+    <li><a href="contacts.html">Ota yhteyttä</a></li>
 </ul>
     <h1>Yhteystiedot</h1>
     <br>
     <p>Tänne yhteystiedot (sähköpostit tms.)</p>
-    <p>Kartta myös tännne</p>
+<form>
+    <div>
+        <input name="fName" type="text" placeholder="Nimi">
+    </div>
+    <div>
+        <input name="lName" type="text" placeholder="Anna palautetta sivustostamme">
+    </div>
+    <div>
+        <input name="submit" type="submit" value="Lähetä">
+    </div>
+</form>
 
 
     <div id="map" style="width: 300px; height: 300px;"></div> <!- mobiilikoko? ->
@@ -51,6 +59,29 @@
       }
 
       navigator.geolocation.getCurrentPosition(kartta);
+
+      // luodaan olio 'data', johon lisätään käyttäjän syöte lomakkeesta ja määritetään http-metodiksi POST
+      const data = {
+        body: {
+          fname: document.querySelector('input[name=fName]').value,
+          lname: document.querySelector('input[name=lName]').value
+        },
+        method: 'POST'
+      }
+
+      // Kun lomake lähetetään...
+      form.onsubmit = function(evt) {
+        // ... estä vakiotapahtuma.
+        evt.preventDefault();
+        // lähetetään tiedot
+        fetch(console.log, data)
+        .then( function(vastaus) {  // Sitten kun palvelimen vastaus on saatu
+          console.log(vastaus);       // tehdään vastauksella jotain.
+        }).catch( function(virhe) {  // Virhetilanteessa otetaan virhe kiinni
+          console.log(virhe);        // ja tulostetaan se.
+        });
+      }
+
     </script>
 <p class="disclaimer"></p>
 </body>
