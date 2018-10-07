@@ -12,6 +12,12 @@ body {
 
 li {
     float: left;
+    background-color: forestgreen;
+    margin-right: 2px;
+    border-style: solid;
+    border: 3px;
+    border-color: limegreen;
+    border-radius: 5px;
 }
 
 li a, .dropbtn {
@@ -54,9 +60,42 @@ li.dropdown {
 }
 
 #etusivu_logo {
+    max-width:20%;
+    top: 0;
+    left: 0;
+    margin: -35px;
+    margin-bottom: -45px;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    clear: left;
 
 }
-.logoteksti {
-    font-size: xx-large;
-    height: 60px;
+.aloitus {
+    background-color: darkgreen;
+    border-style: solid;
+    border-width: 1px;
+    border-color: seagreen;
+}
+.disclaimer {
+    color: rgba(127, 127, 127, 0.72);
+    text-align: center;
+    padding-top: 40px;
+}
+.teksti {
+    width: 75%;
+}
+.kuva {
+    width: 25%;
+}
+.runko {
+    display: flex;
+    flex-flow: row wrap;
+}
+.sloganjanav {
+    display:flex;
+    flex-flow: column-wrap;
+}
+.slogani{
+    top: 100px;
 }
