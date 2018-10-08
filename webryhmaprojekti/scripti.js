@@ -94,47 +94,112 @@ document.querySelector('.ostos4').addEventListener('click', function(evt){ //Nel
 function koriauki(evt){ //Funktio joka näyttää ostoskorin sisällön
   let r;
 
+  document.querySelector('.ostoskorisisalto').style = 'display:inline-block;';
+
+  if (ostoskori.length >= 1){
+    document.querySelector('.tyhjennakori').style = 'visibility:visible;';
+  }
+
+
   for (r = 0; r < ostoskori.length; r++) {
 
     const li = document.createElement('li');
-    li.innerHTML = ostoskori[r].nimi +` `+ ostoskori[r].maara;
+    li.innerHTML = ostoskori[r].nimi;
 
-    document.querySelector('.ostoslista').appendChild(li);
+    document.querySelector('.ostoslistanimi').appendChild(li);
   }
-  document.querySelector('.naytakori').removeEventListener('click', koriauki);
-  document.querySelector('.naytakori').addEventListener('click', korikiinni);
-  document.querySelector('.tyhjennakori').style = 'visibility:visible;';
+  for (r = 0; r < ostoskori.length; r++) {
+
+    const li = document.createElement('li');
+    li.innerHTML = ostoskori[r].maara;
+
+    document.querySelector('.ostoslistamaara').appendChild(li);
+  }
+  document.querySelector('.naytakori').removeEventListener('mouseenter', koriauki);
+  document.querySelector('.naytakori').addEventListener('mouseleave', korikiinni);
   }
 
 function korikiinni(evt){  //Funktio joka piilottaa ostoskorin
 
-  const lista = document.querySelector('.ostoslista');
-  while (lista.firstChild){
-    lista.removeChild(lista.firstChild);
+  document.querySelector('.ostoskorisisalto').style = 'display:none;';
+
+  const listanimi = document.querySelector('.ostoslistanimi');
+  while (listanimi.firstChild){
+    listanimi.removeChild(listanimi.firstChild);
   }
-  document.querySelector('.naytakori').removeEventListener('click', korikiinni);
-  document.querySelector('.naytakori').addEventListener('click', koriauki);
-  document.querySelector('.tyhjennakori').style = 'visibility:hidden;';
+  const listamaara = document.querySelector('.ostoslistamaara');
+  while (listamaara.firstChild){
+    listamaara.removeChild(listamaara.firstChild);
+  }
+  document.querySelector('.naytakori').removeEventListener('mouseleave', korikiinni);
+  document.querySelector('.naytakori').addEventListener('mouseenter', koriauki);
 
 }
 
-  document.querySelector('.naytakori').addEventListener('click', koriauki);
+document.querySelector('.naytakori').addEventListener('mouseenter', koriauki);
 
 document.querySelector('.tyhjennakori').addEventListener('click', function(evt){ //Tällä tyhjennetään ostoskori
+
+  document.querySelector('.ostoskorisisalto').style = 'display:none;';
+
   let i;
-  const lista = document.querySelector('.ostoslista');
-  while (lista.firstChild){
-    lista.removeChild(lista.firstChild);
+  const listanimi = document.querySelector('.ostoslistanimi');
+  while (listanimi.firstChild){
+    listanimi.removeChild(listanimi.firstChild);
+  }
+  const listamaara = document.querySelector('.ostoslistamaara');
+  while (listamaara.firstChild){
+    listamaara.removeChild(listamaara.firstChild);
   }
   for (i=ostoskori.length; i>=0; i--) {
     ostoskori.pop();
   }
-  document.querySelector('.naytakori').removeEventListener('click', korikiinni);
-  document.querySelector('.naytakori').addEventListener('click', koriauki);
+  document.querySelector('.naytakori').removeEventListener('mouseleave', korikiinni);
+  document.querySelector('.naytakori').addEventListener('mouseenter', koriauki);
   document.querySelector('.tyhjennakori').style = 'visibility:hidden;';
   tuote1=0;
   tuote2=0;
   tuote3=0;
   tuote4=0;
 });
+
+
+//Tuotetekstien näyttäminen
+document.querySelectorAll('.tuotekuva')[0].addEventListener('mouseenter', function(evt){
+  document.querySelectorAll('.lisakuvaus')[0].style = 'visibility:visible;';
+  document.querySelectorAll('.lisakuvaus')[1].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[2].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[3].style = 'visibility:hidden;';
+});
+document.querySelectorAll('.tuotekuva')[1].addEventListener('mouseenter', function(evt){
+  document.querySelectorAll('.lisakuvaus')[0].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[1].style = 'visibility:visible;';
+  document.querySelectorAll('.lisakuvaus')[2].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[3].style = 'visibility:hidden;';
+});
+document.querySelectorAll('.tuotekuva')[2].addEventListener('mouseenter', function(evt){
+  document.querySelectorAll('.lisakuvaus')[0].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[1].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[2].style = 'visibility:visible;';
+  document.querySelectorAll('.lisakuvaus')[3].style = 'visibility:hidden;';
+});
+document.querySelectorAll('.tuotekuva')[3].addEventListener('mouseenter', function(evt){
+  document.querySelectorAll('.lisakuvaus')[0].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[1].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[2].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[3].style = 'visibility:visible;';
+});
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementsByClassName(".aloitus")[0];
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
