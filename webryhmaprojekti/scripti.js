@@ -138,6 +138,8 @@ document.querySelector('.tyhjennakori').addEventListener('click', function(evt){
   tuote4=0;
 });
 
+
+// Palautelomake
 var slideIndex = 1;
 showSlides(slideIndex);
 
