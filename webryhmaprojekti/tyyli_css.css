@@ -29,6 +29,31 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
+li navigaatio:hover {
+    background-color: #111;
+}
+
+
+.vasen{
+    margin: 50px;
+    display: inline-block;
+    grid-area: vasen;
+}
+
+.oikea{
+    margin: 50px;
+    display:inline-block;
+    grid-area:oikea;
+}
+
+.ostoslista{
+    list-style-type:none;
+}
+
+.tyhjennakori{
+    visibility:hidden;
+}
+
 li a:hover, .dropdown:hover .dropbtn {
     background-color: crimson;
 }
