@@ -2,6 +2,10 @@ body {
     font-family: "Century Gothic", Sans-serif;
 }
 
+/*===================================================
+Navigaatio
+===================================================*/
+
 .navigaatiolista {
     list-style-type: none;
     margin: 0;
@@ -14,11 +18,7 @@ body {
 .menulista, .dropdown{
     float: left;
     background-color: forestgreen;
-    margin-right: 2px;
-    border-style: solid;
-    border: 3px;
-    border-color: limegreen;
-    border-radius: 5px;
+
 }
 
 .menulistaoikea {
@@ -118,6 +118,7 @@ li navigaatio:hover {
     visibility:hidden;
 }
 
+
 li a:hover, .dropdown:hover .dropbtn {
     background-color: crimson;
 }
@@ -151,46 +152,26 @@ li.dropdown {
 
 #etusivu_logo {
     max-width: 12%;
-    margin-top: -74px;
-    margin-left: 7px;
-    margin-right: 10px;
+    margin-top: -7%;
+    margin-left: 1%;
+    margin-right: -2%;
     padding: 0;
-    overflow: hidden;
     float: left;
     clear: left;
+    position:relative;
 
 }
 
 .aloitus {
 
-    max-height: 50px;
-    margin-top: 73px;
+    max-height: auto;
+    margin-top: 7%;
     background-color: darkgreen;
     border-style: solid;
+    border-radius: 8px;
     border-width: 1px;
     border-color: seagreen;
     grid-area:menu;
-}
-
-.disclaimer {
-    color: rgba(127, 127, 127, 0.72);
-    text-align: center;
-    padding-top: 40px;
-}
-
-.teksti {
-    width: 75%;
-}
-
-.kuva {
-    width: 25%;
-}
-
-.runko {
-    margin-left: 200px;
-    margin-right: 200px;
-    display: flex;
-    flex-flow: row wrap;
 }
 
 .sloganjanav {
@@ -198,7 +179,128 @@ li.dropdown {
     flex-flow: column-wrap;
 }
 .slogani{
-    top: 100px;
+    position:absolute;
+    margin-left: 65%;
+    margin-top: -2%;
+    font-size: 20px;
+}
+
+/*===================================================
+Navigaation loppu
+===================================================*/
+
+/*===================================================
+Tuotesivun ostoskori
+===================================================*/
+
+.vasen{
+    margin: 50px;
+    display: inline-block;
+    grid-area: vasen;
+}
+
+.oikea{
+    margin: 50px;
+    display:inline-block;
+    grid-area:oikea;
+}
+
+.ostoslista{
+    list-style-type:none;
+}
+
+.tyhjennakori{
+    visibility:hidden;
+}
+
+/*===================================================
+Tuotesivun ostoskorin loppu
+===================================================*/
+
+/*===================================================
+Palautelomake
+===================================================*/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*===================================================
+Disclaimeri
+===================================================*/
+
+.disclaimer {
+    color: rgba(127, 127, 127, 0.72);
+    text-align: center;
+    padding-top: 40px;
+}
+
+/*===================================================
+Disclaimerin loppu
+===================================================*/
+
+/*===================================================
+Etusivun CSS
+===================================================*/
+
+.teksti {
+    width: 70%;
+}
+
+.kuva {
+    margin: 4px;
+    width: 28%;
+}
+
+.runko {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
 }
 
 .lisakuvaus{
@@ -246,3 +348,93 @@ li.dropdown {
     padding-top: 60px;
 }
 
+
+.text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+}
+
+
+.numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+}
+
+
+.dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+        background-color: #717171;
+}
+
+
+.fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+}
+
+@keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+}
+
+/*===================================================
+Etusivun CSS-loppu
+===================================================*/
+
+/*===================================================
+Sivujen yleinen layout(Hoito,tuote ja about-sivuille
+===================================================*/
+
+.tuotesivu{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.sisalto {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.tyontekija, .hoitoboxi {
+    display: flex;
+    flex-flow: row wrap;
+}
+.tyontekijakuva, .hoitokuva {
+    max-width: 28%;
+    margin-right: 4px;
+}
+.tyontekijakuvaus, .hoitotekstit{
+    max-width: 70%;
+}
+
+/*===================================================
+Sivujen yleinen layout loppuu
+===================================================*/
