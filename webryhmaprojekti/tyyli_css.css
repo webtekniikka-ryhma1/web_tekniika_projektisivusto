@@ -2,6 +2,10 @@ body {
     font-family: "Century Gothic";
 }
 
+/*===================================================
+Navigaatio
+===================================================*/
+
 .navigaatiolista {
     list-style-type: none;
     margin: 0;
@@ -27,27 +31,6 @@ li a, .dropbtn {
 
 li navigaatio:hover {
     background-color: #111;
-}
-
-
-.vasen{
-    margin: 50px;
-    display: inline-block;
-    grid-area: vasen;
-}
-
-.oikea{
-    margin: 50px;
-    display:inline-block;
-    grid-area:oikea;
-}
-
-.ostoslista{
-    list-style-type:none;
-}
-
-.tyhjennakori{
-    visibility:hidden;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -103,11 +86,66 @@ li.dropdown {
     border-color: seagreen;
 }
 
+.sloganjanav {
+    display:flex;
+    flex-flow: column-wrap;
+}
+.slogani{
+    position:absolute;
+    margin-left: 65%;
+    margin-top: -2%;
+    font-size: 20px;
+}
+
+/*===================================================
+Navigaation loppu
+===================================================*/
+
+/*===================================================
+Tuotesivun ostoskori
+===================================================*/
+
+.vasen{
+    margin: 50px;
+    display: inline-block;
+    grid-area: vasen;
+}
+
+.oikea{
+    margin: 50px;
+    display:inline-block;
+    grid-area:oikea;
+}
+
+.ostoslista{
+    list-style-type:none;
+}
+
+.tyhjennakori{
+    visibility:hidden;
+}
+
+/*===================================================
+Tuotesivun ostoskorin loppu
+===================================================*/
+
+/*===================================================
+Disclaimeri
+===================================================*/
+
 .disclaimer {
     color: rgba(127, 127, 127, 0.72);
     text-align: center;
     padding-top: 40px;
 }
+
+/*===================================================
+Disclaimerin loppu
+===================================================*/
+
+/*===================================================
+Etusivun CSS
+===================================================*/
 
 .teksti {
     width: 70%;
@@ -125,16 +163,14 @@ li.dropdown {
     flex-flow: row wrap;
 }
 
-.sloganjanav {
-    display:flex;
-    flex-flow: column-wrap;
-}
-.slogani{
-    position:absolute;
-    margin-left: 65%;
-    margin-top: -2%;
-    font-size: 20px;
-}
+/*===================================================
+Etusivun CSS-loppu
+===================================================*/
+
+/*===================================================
+Sivujen yleinen layout(Hoito,tuote ja about-sivuille
+===================================================*/
+
 .tuotesivu{
     margin-left: 15%;
     margin-right: 15%;
@@ -143,3 +179,17 @@ li.dropdown {
     margin-left: 15%;
     margin-right: 15%;
 }
+.tyontekija, .hoitoboxi {
+    display: flex;
+    flex-flow: row wrap;
+}
+.tyontekijakuva, .hoitokuva {
+    max-width: 28%;
+    margin-right: 4px;
+}
+.tyontekijakuvaus, .hoitotekstit{
+    max-width: 70%;
+}
+/*===================================================
+Sivujen yleinen layout loppuu
+===================================================*/
