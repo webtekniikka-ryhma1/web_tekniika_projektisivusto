@@ -18,20 +18,11 @@ Navigaatio
 .menulista, .dropdown{
     float: left;
     background-color: forestgreen;
-
 }
 
-.menulistaoikea {
-    float: right;
-    background-color: forestgreen;
-    margin-right: 2px;
-    border-style: solid;
-    border: 3px;
-    border-color: limegreen;
-    border-radius: 5px;
-    cursor:pointer;
+.menulistaoikea{
+    float:right;
 }
-
 
 
 li a, .dropbtn {
@@ -42,55 +33,50 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-.menulistaoikea a{
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 
-}
 
 li navigaatio:hover {
     background-color: #111;
 }
 
 
+
+
 .ylavasen{
+    min-width:100%;
     border-style: groove;
     text-align: center;
     margin-bottom:10px;
     background-color: forestgreen;
     grid-area: ylavasen;
-    justify-self: center;
-    min-width:200px;
+    justify-self: start;
 }
 
 .ylaoikea{
+    min-width:100%;
     border-style: groove;
     text-align: center;
     margin-bottom:10px;
     background-color: forestgreen;
     grid-area: ylaoikea;
-    justify-self: center;
-    min-width:200px;
+    justify-self: start;
 }
 
 .alavasen{
+    min-width:100%;
     border-style: groove;
     text-align: center;
     background-color: forestgreen;
     grid-area: alavasen;
-    justify-self: center;
-    min-width:200px;
+    justify-self: start;
 }
 .alaoikea{
+    min-width:100%;
     border-style: groove;
     text-align: center;
     background-color: forestgreen;
     grid-area: alaoikea;
-    justify-self: center;
-    min-width:200px;
+    justify-self: start;
 }
 
 .ostoskorisisalto{
@@ -159,12 +145,10 @@ li.dropdown {
     float: left;
     clear: left;
     position:relative;
-
 }
 
 .aloitus {
-
-    max-height: auto;
+    height: auto;
     margin-top: 7%;
     background-color: darkgreen;
     border-style: solid;
@@ -192,18 +176,6 @@ Navigaation loppu
 /*===================================================
 Tuotesivun ostoskori
 ===================================================*/
-
-.vasen{
-    margin: 50px;
-    display: inline-block;
-    grid-area: vasen;
-}
-
-.oikea{
-    margin: 50px;
-    display:inline-block;
-    grid-area:oikea;
-}
 
 .ostoslista{
     list-style-type:none;
@@ -309,18 +281,15 @@ Etusivun CSS
 
 .kori{
     float:right;
-    margin-right:20px;
-    grid-area:menu;
+    margin-right:8px;
     margin-top:10px;
-    margin-bottom:20px;
-    justify-self:center;
 }
 
 .tuotesivu{
+    margin-top:20px;
     display:grid;
-    grid-gap:5%;
-    grid-row-gap:5%;
-    grid-template-columns: 15% 1fr 1fr 15%;
+    grid-gap:10px;
+    grid-template-columns: 15% 35% 35% 1fr;
     grid-template-rows:auto;
     grid-template-areas:
         ". ylavasen ylaoikea ."
@@ -338,15 +307,7 @@ Etusivun CSS
     height:200px;
 }
 
-.aloitus {
-    position: fixed;
-    top: -73px;
-    width: 100%;
-}
 
-.aloitus + .tuotesivu {
-    padding-top: 60px;
-}
 
 
 .text {

@@ -71,10 +71,10 @@ document.querySelector('.ostos3').addEventListener('click', function(evt){ //Kol
 });
 
 document.querySelector('.ostos4').addEventListener('click', function(evt){ //Neljännen tuotteen ostoskorinappi
-  let osto1 = {nimi:'Kotimainen terveyskivi', maara: 1};
+  let osto1 = {nimi:'Hyvinvointihiekka', maara: 1};
   if (+tuote4>0){
 
-    var searchTerm = "Kotimainen terveyskivi",
+    var searchTerm = "Hyvinvointihiekka",
         index = -1;
     for(var i = 0, len = ostoskori.length; i < len; i++) {
       if (ostoskori[i].nimi === searchTerm) {
@@ -190,18 +190,7 @@ document.querySelectorAll('.tuotekuva')[3].addEventListener('mouseenter', functi
   document.querySelectorAll('.lisakuvaus')[3].style = 'visibility:visible;';
 });
 
-window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementsByClassName(".aloitus")[0];
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 
 // Palautelomake
 var slideIndex = 1;
