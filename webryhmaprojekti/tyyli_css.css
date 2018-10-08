@@ -1,5 +1,5 @@
 body {
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", Sans-serif;
 }
 
 /*===================================================
@@ -15,11 +15,24 @@ Navigaatio
     background-color: forestgreen;
 }
 
-li {
+.menulista, .dropdown{
     float: left;
     background-color: forestgreen;
 
 }
+
+.menulistaoikea {
+    float: right;
+    background-color: forestgreen;
+    margin-right: 2px;
+    border-style: solid;
+    border: 3px;
+    border-color: limegreen;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+
 
 li a, .dropbtn {
     display: inline-block;
@@ -29,9 +42,82 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
+.menulistaoikea a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
 li navigaatio:hover {
     background-color: #111;
 }
+
+
+.ylavasen{
+    border-style: groove;
+    text-align: center;
+    margin-bottom:10px;
+    background-color: forestgreen;
+    grid-area: ylavasen;
+    justify-self: center;
+    min-width:200px;
+}
+
+.ylaoikea{
+    border-style: groove;
+    text-align: center;
+    margin-bottom:10px;
+    background-color: forestgreen;
+    grid-area: ylaoikea;
+    justify-self: center;
+    min-width:200px;
+}
+
+.alavasen{
+    border-style: groove;
+    text-align: center;
+    background-color: forestgreen;
+    grid-area: alavasen;
+    justify-self: center;
+    min-width:200px;
+}
+.alaoikea{
+    border-style: groove;
+    text-align: center;
+    background-color: forestgreen;
+    grid-area: alaoikea;
+    justify-self: center;
+    min-width:200px;
+}
+
+.ostoskorisisalto{
+    display:none;
+    margin-top:10px;
+    padding:5px;
+    background-color: #D1FAD1;
+    border-style: groove;
+    border-radius:6px;
+    border-width:2px;
+}
+
+.ostoskorivas{
+    display:inline-block;
+}
+.ostoskorioik{
+    display:inline-block;
+}
+
+.kori ul{
+    list-style:none;
+}
+
+.tyhjennakori{
+    visibility:hidden;
+}
+
 
 li a:hover, .dropdown:hover .dropbtn {
     background-color: crimson;
@@ -77,6 +163,7 @@ li.dropdown {
 }
 
 .aloitus {
+
     max-height: auto;
     margin-top: 7%;
     background-color: darkgreen;
@@ -84,6 +171,7 @@ li.dropdown {
     border-radius: 8px;
     border-width: 1px;
     border-color: seagreen;
+    grid-area:menu;
 }
 
 .sloganjanav {
@@ -213,6 +301,51 @@ Etusivun CSS
 
 .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
+}
+
+.lisakuvaus{
+    visibility:hidden;
+}
+
+.kori{
+    float:right;
+    margin-right:20px;
+    grid-area:menu;
+    margin-top:10px;
+    margin-bottom:20px;
+    justify-self:center;
+}
+
+.tuotesivu{
+    display:grid;
+    grid-gap:5%;
+    grid-row-gap:5%;
+    grid-template-columns: 15% 1fr 1fr 15%;
+    grid-template-rows:auto;
+    grid-template-areas:
+        ". ylavasen ylaoikea ."
+        ". alavasen alaoikea .";
+}
+
+.tuotesivu button, .kori button{
+    background-color: #D1FAD1;
+    border-style: groove;
+    border-radius:5px;
+}
+
+.tuotesivu img{
+    width:300px;
+    height:200px;
+}
+
+.aloitus {
+    position: fixed;
+    top: -73px;
+    width: 100%;
+}
+
+.aloitus + .tuotesivu {
+    padding-top: 60px;
 }
 
 
