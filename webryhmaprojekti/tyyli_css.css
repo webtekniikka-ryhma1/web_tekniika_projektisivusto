@@ -260,14 +260,21 @@ Etusivun CSS
     flex-flow: row wrap;
 }
 
+.etusivunlaatikko {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+
 .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 
 .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .lisakuvaus{
@@ -290,8 +297,8 @@ Etusivun CSS
     grid-template-columns: 15% 35% 35% 1fr;
     grid-template-rows:auto;
     grid-template-areas:
-        ". ylavasen ylaoikea ."
-        ". alavasen alaoikea .";
+            ". ylavasen ylaoikea ."
+            ". alavasen alaoikea .";
 }
 
 .tuotesivu button, .kori button{
@@ -314,7 +321,7 @@ Etusivun CSS
 }
 
 /*slideshow*/
- * {box-sizing: border-box}
+* {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
@@ -439,6 +446,170 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     max-width: 70%;
 }
 
+/*===================================================
+Sivujen yleinen layout loppuu
+===================================================*/
+    clear: left;
+    position:relative;
+
+}
+
+.aloitus {
+    max-height: auto;
+    margin-top: 7%;
+    background-color: darkgreen;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: seagreen;
+}
+
+.sloganjanav {
+    display:flex;
+    flex-flow: column-wrap;
+}
+.slogani{
+    position:absolute;
+    margin-left: 65%;
+    margin-top: -2%;
+    font-size: 20px;
+}
+
+/*===================================================
+Navigaation loppu
+===================================================*/
+
+/*===================================================
+Tuotesivun ostoskori
+===================================================*/
+
+.vasen{
+    margin: 50px;
+    display: inline-block;
+    grid-area: vasen;
+}
+
+.oikea{
+    margin: 50px;
+    display:inline-block;
+    grid-area:oikea;
+}
+
+.ostoslista{
+    list-style-type:none;
+}
+
+.tyhjennakori{
+    visibility:hidden;
+}
+
+/*===================================================
+Tuotesivun ostoskorin loppu
+===================================================*/
+
+/*===================================================
+Palautelomake
+===================================================*/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*===================================================
+Disclaimeri
+===================================================*/
+
+.disclaimer {
+    color: rgba(127, 127, 127, 0.72);
+    text-align: center;
+    padding-top: 40px;
+}
+
+/*===================================================
+Disclaimerin loppu
+===================================================*/
+
+/*===================================================
+Etusivun CSS
+===================================================*/
+
+.teksti {
+    width: 70%;
+}
+
+.kuva {
+    margin: 4px;
+    width: 28%;
+}
+
+.runko {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*===================================================
+Etusivun CSS-loppu
+===================================================*/
+
+/*===================================================
+Sivujen yleinen layout(Hoito,tuote ja about-sivuille
+===================================================*/
+
+.tuotesivu{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.sisalto {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.tyontekija, .hoitoboxi {
+    display: flex;
+    flex-flow: row wrap;
+}
+.tyontekijakuva, .hoitokuva {
+    max-width: 28%;
+    margin-right: 4px;
+}
+.tyontekijakuvaus, .hoitotekstit{
+    max-width: 70%;
+}
 /*===================================================
 Sivujen yleinen layout loppuu
 ===================================================*/
