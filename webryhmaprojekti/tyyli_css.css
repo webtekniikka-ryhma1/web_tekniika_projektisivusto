@@ -24,6 +24,13 @@ Navigaatio
     float:right;
 }
 
+.menulistaoikea a{
+    border-style:solid;
+    border-width:0;
+    border-radius: 6px;
+}
+
+
 
 li a, .dropbtn {
     display: inline-block;
@@ -153,10 +160,6 @@ li.dropdown {
     grid-area:menu;
 }
 
-.sloganjanav {
-    display:flex;
-    flex-flow: column-wrap;
-}
 .slogani{
     position:absolute;
     margin-left: 65%;
