@@ -167,27 +167,27 @@ document.querySelector('.tyhjennakori').addEventListener('click', function(evt){
 
 //Tuotetekstien näyttäminen
 document.querySelectorAll('.tuotekuva')[0].addEventListener('mouseenter', function(evt){
-  document.querySelectorAll('.lisakuvaus')[0].style = 'visibility:visible;';
-  document.querySelectorAll('.lisakuvaus')[1].style = 'visibility:hidden;';
-  document.querySelectorAll('.lisakuvaus')[2].style = 'visibility:hidden;';
-  document.querySelectorAll('.lisakuvaus')[3].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[0].style = 'display:block;';
+  document.querySelectorAll('.lisakuvaus')[1].style = 'display:none;';
+  document.querySelectorAll('.lisakuvaus')[2].style = 'display:none;';
+  document.querySelectorAll('.lisakuvaus')[3].style = 'display:none;';
 });
 document.querySelectorAll('.tuotekuva')[1].addEventListener('mouseenter', function(evt){
-  document.querySelectorAll('.lisakuvaus')[0].style = 'visibility:hidden;';
-  document.querySelectorAll('.lisakuvaus')[1].style = 'visibility:visible;';
-  document.querySelectorAll('.lisakuvaus')[2].style = 'visibility:hidden;';
-  document.querySelectorAll('.lisakuvaus')[3].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[0].style = 'display:none;';
+  document.querySelectorAll('.lisakuvaus')[1].style = 'display:block;';
+  document.querySelectorAll('.lisakuvaus')[2].style = 'display:none;';
+  document.querySelectorAll('.lisakuvaus')[3].style = 'display:none;';
 });
 document.querySelectorAll('.tuotekuva')[2].addEventListener('mouseenter', function(evt){
-  document.querySelectorAll('.lisakuvaus')[0].style = 'visibility:hidden;';
-  document.querySelectorAll('.lisakuvaus')[1].style = 'visibility:hidden;';
-  document.querySelectorAll('.lisakuvaus')[2].style = 'visibility:visible;';
-  document.querySelectorAll('.lisakuvaus')[3].style = 'visibility:hidden;';
+  document.querySelectorAll('.lisakuvaus')[0].style = 'display:none;';
+  document.querySelectorAll('.lisakuvaus')[1].style = 'display:none;';
+  document.querySelectorAll('.lisakuvaus')[2].style = 'display:block;';
+  document.querySelectorAll('.lisakuvaus')[3].style = 'display:none;';
 });
 document.querySelectorAll('.tuotekuva')[3].addEventListener('mouseenter', function(evt){
-  document.querySelectorAll('.lisakuvaus')[0].style = 'visibility:hidden;';
-  document.querySelectorAll('.lisakuvaus')[1].style = 'visibility:hidden;';
-  document.querySelectorAll('.lisakuvaus')[2].style = 'visibility:hidden;';
-  document.querySelectorAll('.lisakuvaus')[3].style = 'visibility:visible;';
+  document.querySelectorAll('.lisakuvaus')[0].style = 'display:none;';
+  document.querySelectorAll('.lisakuvaus')[1].style = 'display:none;';
+  document.querySelectorAll('.lisakuvaus')[2].style = 'display:none;';
+  document.querySelectorAll('.lisakuvaus')[3].style = 'display:block;';
 });
 

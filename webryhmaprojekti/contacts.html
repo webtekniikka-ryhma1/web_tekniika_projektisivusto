@@ -47,7 +47,8 @@
     <br>
     <div class="karttaboxi">
     <div id="map" style="width: 300px; height: 300px;"></div> <!- mobiilikoko? ->
-    <p class="karttateksti">OSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE XOSOITE X</p>
+    <p class="karttateksti">Osoitteemme on Hakjärventie 8, 02820 Espoo.<br><br>Myymälämme sijaitsee idyllisellä paikalla Nuuksion lähimetsässä. <br><br>
+        Helpoiten pääset paikalle tekemällä henkivaelluksen Nuuksion metsien halki käyttäen sydäntäsi kompassina. <br><br>tositerveys@gmail.com
     </div>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
@@ -66,7 +67,7 @@
         }).addTo(map);
 
         L.marker([long, lat]).addTo(map)
-        .bindPopup('Kauppamme sijainti.')
+        .bindPopup('Kauppamme sijainti suunnilleen.')
         .openPopup();
       }
 

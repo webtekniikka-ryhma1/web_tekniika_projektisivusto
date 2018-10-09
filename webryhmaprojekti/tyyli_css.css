@@ -80,6 +80,9 @@ Navigaation loppu
     background-color: white;
     grid-area: ylavasen;
     justify-self: start;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .ylaoikea{
@@ -90,6 +93,7 @@ Navigaation loppu
     background-color: white;
     grid-area: ylaoikea;
     justify-self: start;
+    padding-bottom: 5px;
 }
 
 .alavasen{
@@ -99,6 +103,7 @@ Navigaation loppu
     background-color: white;
     grid-area: alavasen;
     justify-self: start;
+    padding-bottom: 5px;
 }
 .alaoikea{
     min-width:100%;
@@ -107,6 +112,7 @@ Navigaation loppu
     background-color: white;
     grid-area: alaoikea;
     justify-self: start;
+    padding-bottom: 5px;
 }
 
 .ostoskorisisalto{
@@ -313,7 +319,7 @@ Etusivun CSS
 }
 
 .lisakuvaus{
-    visibility:hidden;
+    display:none;
 }
 
 .kori{
