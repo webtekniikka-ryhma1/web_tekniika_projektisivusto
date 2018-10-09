@@ -452,13 +452,10 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
 /*===================================================
 Sivujen yleinen layout loppuu
 ===================================================*/
-    clear: left;
-    position:relative;
 
-}
 
 .aloitus {
-    max-height: auto;
+    height: auto;
     margin-top: 7%;
     background-color: darkgreen;
     border-style: solid;
@@ -467,10 +464,7 @@ Sivujen yleinen layout loppuu
     border-color: seagreen;
 }
 
-.sloganjanav {
-    display:flex;
-    flex-flow: column-wrap;
-}
+
 .slogani{
     position:absolute;
     margin-left: 65%;
