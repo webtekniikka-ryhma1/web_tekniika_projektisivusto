@@ -1,5 +1,6 @@
 body {
     font-family: "Century Gothic", Sans-serif;
+    background-color: rgb(244, 240, 234);
 }
 
 /*===================================================
@@ -46,7 +47,27 @@ li navigaatio:hover {
     background-color: #111;
 }
 
+.aloitus {
+    height: auto;
+    margin-top: 7%;
+    background-color: darkgreen;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: seagreen;
+}
 
+
+.slogani{
+    position:absolute;
+    margin-left: 75%;
+    margin-top: -2%;
+    font-size: 20px;
+}
+
+/*===================================================
+Navigaation loppu
+===================================================*/
 
 
 .ylavasen{
@@ -332,6 +353,10 @@ img {vertical-align: middle;}
     max-width: 1000px;
     position: relative;
     margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius:4px;
 }
 
 /* Next & previous buttons */
