@@ -81,8 +81,8 @@ Navigaation loppu
     grid-area: ylavasen;
     justify-self: start;
     padding-bottom: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .ylaoikea{
@@ -94,6 +94,8 @@ Navigaation loppu
     grid-area: ylaoikea;
     justify-self: start;
     padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .alavasen{
@@ -104,6 +106,8 @@ Navigaation loppu
     grid-area: alavasen;
     justify-self: start;
     padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .alaoikea{
     min-width:100%;
@@ -113,6 +117,8 @@ Navigaation loppu
     grid-area: alaoikea;
     justify-self: start;
     padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .ostoskorisisalto{
@@ -687,3 +693,10 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
 /*===================================================
 Sivujen yleinen layout loppuu
 ===================================================*/
+
+.tyontekija h3{
+    width:100%;
+}
+.yritysesittely{
+    margin-bottom:50px;
+}
