@@ -49,10 +49,10 @@ document.querySelector('.ostos2').addEventListener('click', function(evt){ //Toi
 });
 
 document.querySelector('.ostos3').addEventListener('click', function(evt){ //Kolmannen tuotteen ostoskorinappi
-  let osto1 = {nimi:'Korvavalo', maara: 1};
+  let osto1 = {nimi:'Kirkasvalokuuloke', maara: 1};
   if (+tuote3>0){
 
-    var searchTerm = "Korvavalo",
+    var searchTerm = "Kirkasvalokuuloke",
         index = -1;
     for(var i = 0, len = ostoskori.length; i < len; i++) {
       if (ostoskori[i].nimi === searchTerm) {
