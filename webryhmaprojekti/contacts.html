@@ -30,7 +30,14 @@
     <h1>Yhteystiedot</h1>
     <br>
     <p>Tänne yhteystiedot (sähköpostit tms.)</p>
-<div class="container">
+
+
+    <div id="map" style="width: 300px; height: 300px;"></div> <!- mobiilikoko? ->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
+    
+    <div class="container">
     <form action="javascript:alert('Kiitos')" target="_self">
     <div>
         <input name="fName" type="text" placeholder="Nimi" required>
@@ -43,12 +50,7 @@
     </div>
 </form>
 </div>
-
-
-    <div id="map" style="width: 300px; height: 300px;"></div> <!- mobiilikoko? ->
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
+    
     <script>
 
 
