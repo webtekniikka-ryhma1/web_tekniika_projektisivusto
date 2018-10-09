@@ -413,13 +413,80 @@ img {vertical-align: middle;}
 /* Caption text */
 .text {
     color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: right;
+}
+.textnimi{
+    color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
-    width: 100%;
+    top: 180px;
+
+    text-align: right;
+}
+.text, .textnimi {
+    background-color: rgba(32, 28, 28, 0.5);
+    max-width: 70%;
+}
+.text2{
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    top:100px;
+    right: 0;
+
+
+}
+.text2nimi {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    top: 150px;
+    right:0;
+
+
+}
+
+.text2, .text2nimi {
+    position:absolute;
+    background-color: rgba(32, 28, 28, 0.5);
+
+    text-align:left;
+    display:inline-block;
+}
+
+.text3 {
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 0;
+    bottom:80px;
+
     text-align: center;
 }
+.text3nimi {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    right:0;
+    bottom: 40px;
+
+
+}
+.text3, .text3nimi {
+    background-color: rgba(32, 28, 28, 0.5);
+
+    text-align:left;
+    display:inline-block;
+}
+
 
 /* Number text (1/3 etc) */
 .numbertext {
