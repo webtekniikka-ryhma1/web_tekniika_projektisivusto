@@ -310,7 +310,15 @@ Etusivun CSS
 .etusivunlaatikko {
     display: flex;
     flex-flow: row wrap;
+    width:100%;
+}
 
+
+.tekstimiete{
+    width:100%;
+}
+.pikkuteksti{
+    width:100%;
 }
 
 
@@ -364,7 +372,7 @@ Etusivun CSS
 
 .tuotesivu img{
     width:300px;
-    height:200px;
+    height:300px;
 }
 
 /*slideshow*/
@@ -539,6 +547,8 @@ img {vertical-align: middle;}
 /*===================================================
 Etusivun CSS-loppu
 ===================================================*/
+
+
 
 /*===================================================
 Sivujen yleinen layout(Hoito,tuote ja about-sivuille
