@@ -298,6 +298,14 @@ Etusivun CSS
     background-color: #D1FAD1;
     border-style: groove;
     border-radius:5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.tuotesivu button:hover, .kori button:hover {
+    background-color: whitesmoke;
+    border-style: groove;
+    border-radius: 5px;
 }
 
 .tuotesivu img{
