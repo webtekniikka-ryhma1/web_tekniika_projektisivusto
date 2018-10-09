@@ -484,6 +484,20 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
 .tyontekijakuvaus, .hoitotekstit{
     max-width: 70%;
 }
+.karttaboxi {
+    display:flex;
+    flex-flow: row wrap;
+}
+#map {
+    max-width: 35%;
+    margin-right: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+}
+.karttateksti {
+    max-width: 63%
+}
 
 /*===================================================
 Sivujen yleinen layout loppuu
