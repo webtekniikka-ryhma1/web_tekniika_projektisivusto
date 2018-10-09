@@ -71,7 +71,7 @@
         .openPopup();
       }
 
-      navigator.geolocation.getCurrentPosition(kartta);
+      kartta();
 
       // luodaan olio 'data', johon lisätään käyttäjän syöte lomakkeesta ja määritetään http-metodiksi POST
       const data = {
