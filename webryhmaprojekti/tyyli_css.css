@@ -77,7 +77,7 @@ Navigaation loppu
     border-style: groove;
     text-align: center;
     margin-bottom:10px;
-    background-color: forestgreen;
+    background-color: white;
     grid-area: ylavasen;
     justify-self: start;
 }
@@ -87,7 +87,7 @@ Navigaation loppu
     border-style: groove;
     text-align: center;
     margin-bottom:10px;
-    background-color: forestgreen;
+    background-color: white;
     grid-area: ylaoikea;
     justify-self: start;
 }
@@ -96,7 +96,7 @@ Navigaation loppu
     min-width:100%;
     border-style: groove;
     text-align: center;
-    background-color: forestgreen;
+    background-color: white;
     grid-area: alavasen;
     justify-self: start;
 }
@@ -104,7 +104,7 @@ Navigaation loppu
     min-width:100%;
     border-style: groove;
     text-align: center;
-    background-color: forestgreen;
+    background-color: white;
     grid-area: alaoikea;
     justify-self: start;
 }
@@ -112,7 +112,7 @@ Navigaation loppu
 .ostoskorisisalto{
     margin-top:10px;
     padding:5px;
-    background-color: #D1FAD1;
+    background-color: white;
     border-style: groove;
     border-radius:6px;
     border-width:2px;
@@ -477,7 +477,28 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     display: flex;
     flex-flow: row wrap;
 }
-.tyontekijakuva, .hoitokuva {
+.hoitonimi {
+    width:100%;
+}
+.hoitoteksti{
+    width:70%;
+}
+.hoitokuva{
+    width:30%;
+}
+.tilausnappi{
+    width:20%;
+    align-self: center;
+    background-color: white;
+    border-radius:4px;
+}
+.tilausnappi a{
+    text-decoration:none;
+}
+.nappikohdistus{
+    width:40%;
+}
+.tyontekijakuva{
     max-width: 28%;
     margin-right: 4px;
 }
