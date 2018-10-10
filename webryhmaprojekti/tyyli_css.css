@@ -555,13 +555,17 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     flex-flow: row wrap;
     justify-content: center;
     flex-direction: row;
+    margin-bottom: 10%;
 }
+
 .hoitonimi {
     width:100%;
 }
+
 .hoitotekstit{
     width:60%;
     margin-top:0;
+    margin-left:2%;
 }
 
 .tilausnappi{
