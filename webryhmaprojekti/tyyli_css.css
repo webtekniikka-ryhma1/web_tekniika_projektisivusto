@@ -241,6 +241,12 @@ Etusivun CSS
     font-size: 2em;
     text-indent: 50px;
     color: forestgreen;
+    border-left-style: solid;
+    border-left-style: double;
+    border-left-height: 20px;
+    padding: 4%;
+    border-width: 4px;
+    border-left-color: #4CAF50;
 }
 
 .kuva {
@@ -275,13 +281,6 @@ Etusivun CSS
     margin-bottom: 2%;
     justify-content: center;
     flex-direction: column;
-}
-
-.etusivunlaatikko:nth-child(even) {
-    background-color: #D1FAD1;
-    border-left-style: solid;
-    border-width: 4px;
-    border-left-color: #4CAF50;
 }
 
 .tekstimiete {
