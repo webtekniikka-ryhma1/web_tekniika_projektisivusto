@@ -4,7 +4,10 @@ let ostoskori =  [], tuote1 = 0, tuote2 = 0, tuote3 = 0, tuote4 = 0;
 
 
 
-document.querySelector('.ostos1').addEventListener('click', function(evt){ //Ensimmäisen tuotteen ostoskorinappi
+////////////////////Ensimmäisen tuotteen ostoskorinappi
+//////////////////////////////////////////////////////////
+
+document.querySelector('.ostos1').addEventListener('click', function(evt){
   let osto1 = {nimi:'Energia kristalli', maara: 1};
   if (+tuote1>0){
 
@@ -26,7 +29,10 @@ document.querySelector('.ostos1').addEventListener('click', function(evt){ //Ens
   return tuote1;
 });
 
-document.querySelector('.ostos2').addEventListener('click', function(evt){ //Toisen tuotteen ostoskorinappi
+/////////////////////Toisen tuotteen ostoskorinappi
+/////////////////////////////////////////////////////
+
+document.querySelector('.ostos2').addEventListener('click', function(evt){
   let osto1 = {nimi:'Hopeavesi', maara: 1};
   if (+tuote2>0){
 
@@ -48,7 +54,10 @@ document.querySelector('.ostos2').addEventListener('click', function(evt){ //Toi
   return tuote2;
 });
 
-document.querySelector('.ostos3').addEventListener('click', function(evt){ //Kolmannen tuotteen ostoskorinappi
+/////////////////////Kolmannen tuotteen ostoskorinappi
+////////////////////////////////////////////////////////
+
+document.querySelector('.ostos3').addEventListener('click', function(evt){
   let osto1 = {nimi:'Kirkasvalokuuloke', maara: 1};
   if (+tuote3>0){
 
@@ -70,7 +79,10 @@ document.querySelector('.ostos3').addEventListener('click', function(evt){ //Kol
   return tuote3;
 });
 
-document.querySelector('.ostos4').addEventListener('click', function(evt){ //Neljännen tuotteen ostoskorinappi
+/////////////////Neljännen tuotteen ostoskorinappi
+////////////////////////////////////////////////////
+
+document.querySelector('.ostos4').addEventListener('click', function(evt){
   let osto1 = {nimi:'Hyvinvointihiekka', maara: 1};
   if (+tuote4>0){
 
@@ -91,7 +103,10 @@ document.querySelector('.ostos4').addEventListener('click', function(evt){ //Nel
   return tuote4;
 });
 
-function koriauki(evt){ //Funktio joka näyttää ostoskorin sisällön
+//////////////////Funktio joka näyttää ostoskorin sisällön
+////////////////////////////////////////////////////////////
+
+function koriauki(evt){
   let r;
 
   document.querySelector('.kori').style = 'display:inline-block;';
@@ -119,7 +134,10 @@ function koriauki(evt){ //Funktio joka näyttää ostoskorin sisällön
   document.querySelector('.suljekori').addEventListener('click', korikiinni);
   }
 
-function korikiinni(evt){  //Funktio joka piilottaa ostoskorin
+////////////Funktio joka piilottaa ostoskorin
+///////////////////////////////////////////////
+
+function korikiinni(evt){
 
   document.querySelector('.kori').style = 'display:none;';
 
@@ -138,7 +156,11 @@ function korikiinni(evt){  //Funktio joka piilottaa ostoskorin
 
 document.querySelector('.naytakori').addEventListener('mouseenter', koriauki);
 
-document.querySelector('.tyhjennakori').addEventListener('click', function(evt){ //Tällä tyhjennetään ostoskori
+
+/////////////////Tällä tyhjennetään ostoskori
+//////////////////////////////////////////////
+
+document.querySelector('.tyhjennakori').addEventListener('click', function(evt){
 
   document.querySelector('.kori').style = 'display:none;';
 
@@ -165,7 +187,9 @@ document.querySelector('.tyhjennakori').addEventListener('click', function(evt){
 
 
 
-//Tuotetekstien näyttäminen
+//////////////////////////Tuotetekstien näyttäminen
+///////////////////////////////////////////////////
+
 document.querySelectorAll('.tuotekuva')[0].addEventListener('mouseenter', function(evt){
   document.querySelectorAll('.lisakuvaus')[0].style = 'display:block;';
   document.querySelectorAll('.lisakuvaus')[1].style = 'display:none;';

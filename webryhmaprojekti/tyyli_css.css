@@ -1,5 +1,5 @@
 body {
-    font-family: "Century Gothic", Sans-serif;
+    font-family: "Century Gothic", "Helvetica", Sans-serif;
     background-color: rgb(244, 240, 234);
 }
 
@@ -28,7 +28,6 @@ Navigaatio
 .menulistaoikea a{
     border-style:solid;
     border-width:0;
-    border-radius: 6px;
 }
 
 
@@ -129,13 +128,14 @@ Navigaation loppu
     margin-top:10px;
     padding:5px;
     background-color: white;
-    border-style: groove;
-    border-radius:6px;
-    border-width:2px;
+    border-style: solid;
+    border-width:1px;
+    border-radius:2px;
 }
 
 .ostoskorivas{
     display:inline-block;
+    padding-right:5px;
 }
 .ostoskorioik{
     display:inline-block;
@@ -188,42 +188,8 @@ li.dropdown {
     position:relative;
 }
 
-.aloitus {
-    height: auto;
-    margin-top: 7%;
-    background-color: darkgreen;
-    border-style: solid;
-    border-radius: 8px;
-    border-width: 1px;
-    border-color: seagreen;
-    grid-area:menu;
-}
-
-.slogani{
-    position:absolute;
-    margin-left: 65%;
-    margin-top: -2%;
-    font-size: 20px;
-}
-
 /*===================================================
 Navigaation loppu
-===================================================*/
-
-/*===================================================
-Tuotesivun ostoskori
-===================================================*/
-
-.ostoslista{
-    list-style-type:none;
-}
-
-.tyhjennakori{
-    visibility:hidden;
-}
-
-/*===================================================
-Tuotesivun ostoskorin loppu
 ===================================================*/
 
 /*===================================================
@@ -358,16 +324,14 @@ Etusivun CSS
 
 .tuotesivu button, .kori button{
     background-color: #D1FAD1;
-    border-style: groove;
-    border-radius:5px;
+    border-style: solid;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 
 .tuotesivu button:hover, .kori button:hover {
     background-color: whitesmoke;
-    border-style: groove;
-    border-radius: 5px;
+    border-style: solid;
 }
 
 .tuotesivu img{
@@ -577,12 +541,15 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
 .tyontekija, .hoitoboxi {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    flex-direction: row;
 }
 .hoitonimi {
     width:100%;
 }
 .hoitotekstit{
     width:60%;
+    margin-top:0;
 }
 .tilausnappi{
     width:20%;
@@ -594,7 +561,7 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     text-decoration:none;
 }
 .nappikohdistus{
-    width:40%;
+    width:25%;
 }
 .tyontekijakuva{
     max-width: 28%;
@@ -622,25 +589,6 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
 Sivujen yleinen layout loppuu
 ===================================================*/
 
-
-.aloitus {
-    height: auto;
-    margin-top: 7%;
-    background-color: darkgreen;
-    border-style: solid;
-    border-radius: 8px;
-    border-width: 1px;
-    border-color: seagreen;
-}
-
-
-.slogani{
-    position:absolute;
-    margin-left: 65%;
-    margin-top: -2%;
-    font-size: 20px;
-}
-
 /*===================================================
 Navigaation loppu
 ===================================================*/
@@ -648,18 +596,6 @@ Navigaation loppu
 /*===================================================
 Tuotesivun ostoskori
 ===================================================*/
-
-.vasen{
-    margin: 50px;
-    display: inline-block;
-    grid-area: vasen;
-}
-
-.oikea{
-    margin: 50px;
-    display:inline-block;
-    grid-area:oikea;
-}
 
 .ostoslista{
     list-style-type:none;
