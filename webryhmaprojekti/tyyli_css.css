@@ -339,7 +339,7 @@ Etusivun CSS
 .tuotesivu button, .kori button {
     background-color: #D1FAD1;
     border-style: solid;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 
@@ -563,14 +563,25 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     width:60%;
     margin-top:0;
 }
+
 .tilausnappi{
     width:20%;
     align-self: center;
-    background-color: white;
+    background-color: forestgreen;
     border-radius:4px;
+    padding:20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    font-size:1.5em;
 }
+
+.tilausnappi:hover{
+    background-color:crimson;
+}
+
 .tilausnappi a{
     text-decoration:none;
+    color:white;
 }
 .nappikohdistus{
     width:25%;
