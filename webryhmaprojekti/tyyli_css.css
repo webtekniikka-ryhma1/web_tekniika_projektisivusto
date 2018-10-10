@@ -585,6 +585,10 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     margin-bottom: 10%;
 }
 
+.tyontekija{
+    margin-bottom:5%;
+}
+
 .hoitonimi {
     width:100%;
 }
