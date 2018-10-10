@@ -770,9 +770,14 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     display: flex;
     flex-flow: row wrap;
 }
-.tyontekijakuva, .hoitokuva {
+.hoitokuva {
     max-width: 28%;
     margin-right: 4px;
+}
+.tyontekijakuva {
+    width: 20%;
+    height: 15%;
+    margin-right: 7px;
 }
 .tyontekijakuvaus, .hoitotekstit{
     max-width: 70%;
