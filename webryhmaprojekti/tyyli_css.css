@@ -688,10 +688,10 @@ Disclaimeri
     text-align: center;
     padding-top: 30px;
     font-size: 14px;
-    margin-left: 15%;
-    margin-right: 15%;
-
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
 .disclaimerbg {
     display: flex;
     flex-flow: row wrap;
@@ -700,6 +700,15 @@ Disclaimeri
     right:0;
     background-color: rgba(127, 127, 127, 0.72);
     margin-top: 30px;
+}
+
+.disclaimerimg {
+    display: inline-block;
+    overflow: auto;
+    margin-right: 0;
+    margin-left: 90%;
+    width: 8%;
+    height: 8%;
 }
 
 /*===================================================
