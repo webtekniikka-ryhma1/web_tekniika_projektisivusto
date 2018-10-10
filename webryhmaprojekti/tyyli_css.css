@@ -597,7 +597,8 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     width:40%;
 }
 .tyontekijakuva{
-    max-width: 28%;
+    width: 20%;
+    height: 20%;
     margin-right: 4px;
 }
 .tyontekijakuvaus {
