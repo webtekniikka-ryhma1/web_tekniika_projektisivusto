@@ -267,20 +267,6 @@ input[type=submit]:hover {
 }
 
 /*===================================================
-Disclaimeri
-===================================================*/
-
-.disclaimer {
-    color: rgba(127, 127, 127, 0.72);
-    text-align: center;
-    padding-top: 40px;
-}
-
-/*===================================================
-Disclaimerin loppu
-===================================================*/
-
-/*===================================================
 Etusivun CSS
 ===================================================*/
 
@@ -295,7 +281,8 @@ Etusivun CSS
 
 .etusivunvideo {
     margin-right: 4px;
-    width:38%;
+    width:100%;
+    height:auto;
     border-style: solid;
     border-width: 1px;
     border-radius: 4px;
@@ -315,6 +302,8 @@ Etusivun CSS
     display: flex;
     flex-flow: row wrap;
     width:100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 
@@ -720,9 +709,21 @@ Disclaimeri
 ===================================================*/
 
 .disclaimer {
-    color: rgba(127, 127, 127, 0.72);
+    color: white;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
+    font-size: 14px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+.disclaimerbg {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    bottom:0;
+    right:0;
+    background-color: rgba(127, 127, 127, 0.72);
 }
 
 /*===================================================

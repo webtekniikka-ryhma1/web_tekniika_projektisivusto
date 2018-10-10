@@ -27,37 +27,37 @@
     </ul>
 </div>
 
-    
+
 <br>
-    
+
 <div class="runko">
     <div class="slideshow-container">
 
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="tositerveys1.png" style="width:100%">
-        <div class="text">“And, when you want something,<br> all the universe conspires in helping you to achieve it.”</div>
-        <div class="textnimi"> ― Paulo Coelho, The Alchemist</div>
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="tositerveys1.png" style="width:100%">
+            <div class="text">“And, when you want something,<br> all the universe conspires in helping you to achieve it.”</div>
+            <div class="textnimi"> ― Paulo Coelho, The Alchemist</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="tositerveys2.png" style="width:100%">
+            <div class="text2">Kuiskailen salaisuuksia korvaasi – nyökkää vain ja ole hiljaa.</div>
+            <div class="text2nimi">-Rumi</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="tositerveys3.png" style="width:100%">
+            <div class="text3">“The wound is the place where the Light enters you.”</div>
+            <div class="text3nimi">-Rumi</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="tositerveys2.png" style="width:100%">
-        <div class="text2">Kuiskailen salaisuuksia korvaasi – nyökkää vain ja ole hiljaa.</div>
-        <div class="text2nimi">-Rumi</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="tositerveys3.png" style="width:100%">
-        <div class="text3">“The wound is the place where the Light enters you.”</div>
-        <div class="text3nimi">-Rumi</div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
     <div class="etusivunlaatikko">
         <p class="teksti">
             Hyvinvoinnin edelläkävijä jo vuodesta 2015. Hyvinvointimme kumpuaa hyvästä energiasta,
@@ -68,48 +68,46 @@
     </div>
     <div class="etusivunlaatikko">
         <video class="etusivunvideo" width="320" height="240" controls>
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
         </video>
-    <div class="etusivunlaatikko">
-        <p class="tekstimiete">"Sinun on itse hoidettava oma kasvamisesi, oli isoisäsi kuinka pitkä tahansa."</p>
-        <p class="pikkuteksti"><i>- Irlantilainen sanonta</i></p>
-    </div>
-    <div class="etusivunlaatikko">
-        <span class="nappikohdistus"></span><button class="tilausnappi"><a href="tuotesivu.html">Osta meiltä.</a></button>
+        <div class="etusivunlaatikko">
+            <p class="tekstimiete">"Sinun on itse hoidettava oma kasvamisesi, oli isoisäsi kuinka pitkä tahansa."</p>
+            <p class="pikkuteksti"><i>- Irlantilainen sanonta</i></p>
+        </div>
+        <div class="etusivunlaatikko">
+            <span class="nappikohdistus"></span><button class="tilausnappi"><a href="tuotesivu.html">Osta meiltä.</a></button>
+        </div>
     </div>
 </div>
-<div class="runko">
+<div class="disclaimerbg">
     <p class="disclaimer">Tositerveyden tuotteet ja palvelut eivät ole lakisääteisten lääketieteen ammattilaisten hyväksymiä.  Kaikki tuotteet ja palvelut on testattu vapaaehtoisten hippien toimesta. Tositerveys Oy ei ole vastuussa mahdollisesta mielenterveyden romahtamisesta, sisäisestä verenvuodosta, vastustuskyvyn heikkenemisestä, raskasmetallimyrkytyksestä tai kuolemasta.</p>
 </div>
-<script>
-     var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
     </script>
 </body>
 </html>
