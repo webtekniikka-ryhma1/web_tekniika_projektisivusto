@@ -1,5 +1,5 @@
 body {
-    font-family: "Century Gothic", "Helvetica", Sans-serif;
+    font-family: "Century Gothic", Helvetica, sans-serif;
     background-color: rgb(244, 240, 234);
 }
 
@@ -79,7 +79,7 @@ li.dropdown {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -285,9 +285,7 @@ Etusivun CSS
     font-size: 2em;
     text-indent: 50px;
     color: forestgreen;
-    border-top-style: solid;
     border-top-style: double;
-    border-top-height: 20px;
     padding: 4%;
     border-width: 4px;
     border-left-color: #4CAF50;
@@ -594,10 +592,10 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
 }
 
 .hoitokuva {
-    width:300px;
-    height:300px;
-    border-style:solid;
-    border-width:1px;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-width: 1px;
     margin-right: 10px;
 }
 
@@ -671,7 +669,6 @@ Sivujen yleinen layout loppuu
 Palautelomake
 ===================================================*/
 
-body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
 input[type=text], select, textarea {
