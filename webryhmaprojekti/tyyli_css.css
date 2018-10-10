@@ -371,8 +371,6 @@ Etusivun CSS
 .hoitokuva{
     width:300px;
     height:300px;
-    border-style: solid;
-    border-width: 1px;
 }
 
 /*slideshow*/
@@ -558,10 +556,6 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     margin-left: 15%;
     margin-right: 15%;
 }
-.tuotekuva {
-    border-style: solid;
-    border-width: 1px;
-}
 .sisalto {
     margin-left: 15%;
     margin-right: 15%;
@@ -570,18 +564,15 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     display: flex;
     flex-flow: row wrap;
 }
-.hoitoboxi {
-}
 .hoitonimi {
     width:100%;
 }
-.hoitotekstit {
-    margin-left: 6px;
-    width:60%;
-    top: 0;
-    right:0;
+.hoitoteksti{
+    width:70%;
 }
-
+.hoitokuva{
+    width:30%;
+}
 .tilausnappi{
     width:20%;
     align-self: center;
@@ -598,7 +589,7 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     max-width: 28%;
     margin-right: 4px;
 }
-.tyontekijakuvaus{
+.tyontekijakuvaus, .hoitotekstit{
     max-width: 70%;
 }
 .karttaboxi {
@@ -763,7 +754,37 @@ Etusivun CSS
 Etusivun CSS-loppu
 ===================================================*/
 
+/*===================================================
+Sivujen yleinen layout(Hoito,tuote ja about-sivuille
+===================================================*/
 
+.tuotesivu{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.sisalto {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.tyontekija, .hoitoboxi {
+    display: flex;
+    flex-flow: row wrap;
+}
+.hoitokuva {
+    max-width: 28%;
+    margin-right: 4px;
+}
+.tyontekijakuva {
+    width: 20%;
+    height: 15%;
+    margin-right: 7px;
+}
+.tyontekijakuvaus, .hoitotekstit{
+    max-width: 70%;
+}
+/*===================================================
+Sivujen yleinen layout loppuu
+===================================================*/
 
 .tyontekija h3{
     width:100%;
