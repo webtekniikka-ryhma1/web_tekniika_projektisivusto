@@ -277,6 +277,13 @@ Etusivun CSS
     flex-direction: column;
 }
 
+.etusivunlaatikko:nth-child(even) {
+    background-color: #D1FAD1;
+    border-left-style: solid;
+    border-width: 4px;
+    border-left-color: #4CAF50;
+}
+
 .tekstimiete {
     width:100%;
     font-style: italic;
