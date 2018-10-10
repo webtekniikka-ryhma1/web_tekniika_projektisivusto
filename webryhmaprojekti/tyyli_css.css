@@ -42,7 +42,7 @@ li a, .dropbtn {
 
 
 
-li navigaatio:hover {
+li .navigaatio:hover {
     background-color: #111;
 }
 
@@ -66,8 +66,50 @@ li navigaatio:hover {
     font-size: 20px;
 }
 
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: crimson;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#etusivu_logo {
+    max-width: 12%;
+    margin-top: -7%;
+    margin-left: 2%;
+    margin-right: 1%;
+    padding: 0;
+    float: left;
+    clear: left;
+    position:relative;
+}
+
 /*===================================================
-Navigaation loppu
+                Tuotesivu
 ===================================================*/
 
 
@@ -145,58 +187,60 @@ Navigaation loppu
     list-style:none;
 }
 
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: crimson;
+.kori {
+    margin-top:10px;
+    display:none;
+    position:fixed;
+    right:0;
+    margin-right:8px;
 }
 
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-#etusivu_logo {
-    max-width: 12%;
-    margin-top: -7%;
-    margin-left: 2%;
-    margin-right: 1%;
-    padding: 0;
-    float: left;
-    clear: left;
+.tuotesivu {
     position:relative;
+    margin-top:20px;
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: 15% 35% 35% 1fr;
+    grid-template-rows:auto;
+    grid-template-areas:
+            ". ylavasen ylaoikea ."
+            ". alavasen alaoikea .";
 }
 
-/*===================================================
-Navigaation loppu
-===================================================*/
+.tuotesivu button, .kori button {
+    background-color: #D1FAD1;
+    border-style: solid;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.tuotesivu button:hover, .kori button:hover {
+    background-color: whitesmoke;
+    border-style: solid;
+}
+
+.tuotesivu img {
+    width:300px;
+    height:300px;
+}
+
+.lisakuvaus {
+    display:none;
+}
+
+.ostoslista{
+    list-style-type:none;
+}
+
+.tyhjennakori{
+    visibility:hidden;
+}
+
 
 /*===================================================
 Palautelomake
 ===================================================*/
 
-body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
 input[type=text], select, textarea {
@@ -312,54 +356,7 @@ Etusivun CSS
     background-color: rgba(0,0,0,0.8);
 }
 
-.lisakuvaus {
-    display:none;
-}
 
-.kori {
-    margin-top:10px;
-    display:none;
-    position:fixed;
-    right:0;
-    margin-right:8px;
-}
-
-.tuotesivu {
-    position:relative;
-    margin-top:20px;
-    display:grid;
-    grid-gap:10px;
-    grid-template-columns: 15% 35% 35% 1fr;
-    grid-template-rows:auto;
-    grid-template-areas:
-            ". ylavasen ylaoikea ."
-            ". alavasen alaoikea .";
-}
-
-.tuotesivu button, .kori button {
-    background-color: #D1FAD1;
-    border-style: solid;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-
-.tuotesivu button:hover, .kori button:hover {
-    background-color: whitesmoke;
-    border-style: solid;
-}
-
-.tuotesivu img {
-    width:300px;
-    height:300px;
-}
-
-.hoitokuva {
-    width:300px;
-    height:300px;
-    border-style:solid;
-    border-width:1px;
-    margin-right: 10px;
-}
 
 /*slideshow*/
 * {box-sizing: border-box}
@@ -528,6 +525,36 @@ img {vertical-align: middle;}
     .prev, .next,.text {font-size: 11px}
 } /*slideshown loppu*/
 
+
+.teksti {
+    width: 100%;
+    padding-left:10%;
+    padding-right:10%;
+    padding-bottom:10%;
+    font-size: 2em;
+    text-align: center;
+}
+
+h5 {
+    width: 100%;
+    padding-top:2%;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom:0;
+}
+
+.kuva {
+    margin: 4px;
+    width: 28%;
+}
+
+.runko {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
 /*===================================================
 Etusivun CSS-loppu
 ===================================================*/
@@ -562,10 +589,25 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
     width:100%;
 }
 
+.hoitokuva {
+    width:300px;
+    height:300px;
+    border-style:solid;
+    border-width:1px;
+    margin-right: 10px;
+}
+
 .hoitotekstit{
     width:60%;
     margin-top:0;
     margin-left:2%;
+}
+
+.tyontekija h3{
+    width:100%;
+}
+.yritysesittely{
+    margin-bottom:50px;
 }
 
 .tilausnappi{
@@ -619,26 +661,6 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
 
 /*===================================================
 Sivujen yleinen layout loppuu
-===================================================*/
-
-/*===================================================
-Navigaation loppu
-===================================================*/
-
-/*===================================================
-Tuotesivun ostoskori
-===================================================*/
-
-.ostoslista{
-    list-style-type:none;
-}
-
-.tyhjennakori{
-    visibility:hidden;
-}
-
-/*===================================================
-Tuotesivun ostoskorin loppu
 ===================================================*/
 
 /*===================================================
@@ -718,49 +740,3 @@ Disclaimeri
 /*===================================================
 Disclaimerin loppu
 ===================================================*/
-
-/*===================================================
-Etusivun CSS
-===================================================*/
-
-.teksti {
-    width: 100%;
-    padding-left:10%;
-    padding-right:10%;
-    padding-bottom:10%;
-    font-size: 2em;
-    text-align: center;
-}
-
-h5 {
-    width: 100%;
-    padding-top:2%;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom:0;
-}
-
-.kuva {
-    margin: 4px;
-    width: 28%;
-}
-
-.runko {
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-/*===================================================
-Etusivun CSS-loppu
-===================================================*/
-
-
-
-.tyontekija h3{
-    width:100%;
-}
-.yritysesittely{
-    margin-bottom:50px;
-}
