@@ -596,7 +596,11 @@ Sivujen yleinen layout(Hoito,tuote ja about-sivuille
 .nappikohdistus{
     width:40%;
 }
-.tyontekijakuva{
+.sertifikaatit {
+    width: 15%;
+
+}
+.tyontekijakuva {
     width: 20%;
     height: 20%;
     margin-right: 4px;
