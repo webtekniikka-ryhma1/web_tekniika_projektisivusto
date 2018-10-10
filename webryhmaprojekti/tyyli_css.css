@@ -266,16 +266,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
-
-.container {
-    display: block;
-    margin-top: 30px;
-    width: 50%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
 /*===================================================
 Etusivun CSS
 ===================================================*/
@@ -698,14 +688,10 @@ input[type=submit]:hover {
 .container {
     display: block;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
     width: 50%;
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
 }
-
 /*===================================================
 Disclaimeri
 ===================================================*/
