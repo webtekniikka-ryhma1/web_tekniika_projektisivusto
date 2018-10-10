@@ -235,9 +235,12 @@ input[type=submit]:hover {
 /*===================================================
 Etusivun CSS
 ===================================================*/
-
-.teksti {
-    width: 70%;
+.esittelyteksti {
+    width:100%;
+    text-align: justify;
+    font-size: 2em;
+    text-indent: 50px;
+    color: forestgreen;
 }
 
 .kuva {
@@ -274,19 +277,22 @@ Etusivun CSS
     flex-direction: column;
 }
 
-
-.tekstimiete{
+.tekstimiete {
     width:100%;
-    text-align:center;
+    font-style: italic;
+    font-size: 2em;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    color: forestgreen;
+    text-align: center;
 }
 
-.pikkuteksti{
+.pikkuteksti {
     width:100%;
     text-align:center;
     padding-right:10%;
     padding-left:10%;
 }
-
 
 .next {
     right: 0;
@@ -298,11 +304,11 @@ Etusivun CSS
     background-color: rgba(0,0,0,0.8);
 }
 
-.lisakuvaus{
+.lisakuvaus {
     display:none;
 }
 
-.kori{
+.kori {
     margin-top:10px;
     display:none;
     position:fixed;
@@ -310,7 +316,7 @@ Etusivun CSS
     margin-right:8px;
 }
 
-.tuotesivu{
+.tuotesivu {
     position:relative;
     margin-top:20px;
     display:grid;
@@ -322,7 +328,7 @@ Etusivun CSS
             ". alavasen alaoikea .";
 }
 
-.tuotesivu button, .kori button{
+.tuotesivu button, .kori button {
     background-color: #D1FAD1;
     border-style: solid;
     -webkit-transition-duration: 0.4s; /* Safari */
@@ -334,12 +340,12 @@ Etusivun CSS
     border-style: solid;
 }
 
-.tuotesivu img{
+.tuotesivu img {
     width:300px;
     height:300px;
 }
 
-.hoitokuva{
+.hoitokuva {
     width:300px;
     height:300px;
     border-style:solid;
@@ -413,13 +419,13 @@ img {vertical-align: middle;}
     background-color: rgba(32, 28, 28, 0.5);
     max-width: 70%;
 }
-.text2{
+
+.text2 {
     color: #f2f2f2;
     font-size: 25px;
     padding: 8px 12px;
     top:100px;
     right: 0;
-
 
 }
 .text2nimi {
@@ -428,8 +434,6 @@ img {vertical-align: middle;}
     padding: 8px 12px;
     top: 150px;
     right:0;
-
-
 }
 
 .text2, .text2nimi {
@@ -450,6 +454,7 @@ img {vertical-align: middle;}
 
     text-align: center;
 }
+
 .text3nimi {
     color: #f2f2f2;
     font-size: 15px;
@@ -457,9 +462,8 @@ img {vertical-align: middle;}
     position: absolute;
     right:0;
     bottom: 40px;
-
-
 }
+
 .text3, .text3nimi {
     background-color: rgba(32, 28, 28, 0.5);
 
