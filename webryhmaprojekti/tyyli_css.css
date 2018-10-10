@@ -291,6 +291,7 @@ Etusivun CSS
     letter-spacing: 2px;
     color: forestgreen;
     text-align: center;
+    margin-bottom: 1%;
 }
 
 .pikkuteksti {
@@ -298,6 +299,7 @@ Etusivun CSS
     text-align:center;
     padding-right:10%;
     padding-left:10%;
+    margin-top: 0;
 }
 
 .next {
@@ -708,7 +710,7 @@ Etusivun CSS
 
 h5 {
     width: 100%;
-    padding-top:10%;
+    padding-top:2%;
     font-size: 2em;
     text-align: center;
     margin-bottom:0;
